@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <style type="text/css">
+        /* navigation latérale */
+        .nav > li {
+            
+            
+        }
+        .nav > li > a {
+            padding: 20px 0;
+            font-size: 16px;
+        }
+    </style>
+      
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+           <!-- <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Admin</a>
+                </div>        
+            </nav> -->
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-md-12">
+                <div class="entete">
+                    
+                </div>
+            </header>
+            <aside>
+                <nav id="menu" class="col-md-2">
+                    <ul class="nav nav-tabs nav-stacked">
+                      <li class="active"><a href="#" class="ecoles">Écoles</a></li>
+                      <li><a href="#" class="commissions">Commissions</a></li> 
+                      <li><a href="#" class="contenus">Contenus</a></li> 
+                      <li><a href="#" class="utilisateurs">Utilisateurs</a></li>
+                      <li><a href="#" class="modules">Modules</a></li> 
+                      <li><a href="#" class="matieres">Matières</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="col-md-10">
+              <article class="col-md-12">
+
+                <!-- Section écoles -->
+                <section id="ecoles" class="section visible">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Nom</th>
+                            <th>Ville</th>
+                            <th>Commission scolaire</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Cardinal-Roy</td>
+                            <td>Québec</td>
+                            <td>de la Capitale</td>
+                            <td><a href=""><span class="glyphicon glyphicon-pencil"></span>
+                            <a href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>St-Henri</td>
+                            <td>Montréal</td>
+                            <td>de Montréal</td>
+                            <td><a href=""><span class="glyphicon glyphicon-pencil"></span>
+                            <a href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td>Jean-Gauthier</td>
+                            <td>Lac-St-Jean</td>
+                            <td>du Lac-St-Jean</td>
+                            <td><a href=""><span class="glyphicon glyphicon-pencil"></span>
+                            <a href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+                        </tr>
+                    </table>
+                    <button type="button" class="btn btn-success pull-right">
+                    <span class="glyphicon glyphicon-plus"></span> Ajouter</button>
+                </section>
+
+                <!-- Section commissions -->
+                <section id="commissions"class="section hidden">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>commissions</th>
+                      <th>Blib</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table>
+                </section>
+
+                <!-- Section contenus -->
+                <section id="contenus" class="section hidden">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>contenus</th>
+                      <th>Blib</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table>
+                </section> 
+
+                <!-- Section utilisateurs -->
+                <section id="utilisateurs" class="section hidden">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>utilisateurs</th>
+                      <th>Blib</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table>
+                </section> 
+
+                <!-- Section modules -->
+                <section id="modules" class="section hidden">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>modules</th>
+                      <th>Blib</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table>
+                </section>
+
+                <!-- Section matières --> 
+                <section id="matieres" class="section hidden">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>matieres</th>
+                      <th>Blib</th>
+                    </tr>
+                    <tr>
+                      <td>January</td>
+                      <td>$100</td>
+                    </tr>
+                  </table>
+                </section>
+
+              <!-- Fin des sections -->
+              </article>
+            </main>
+        </div>
+    </div>
+    <!-- modale ajout d'école-->
+    <div class="modal" id="modalVilles" role="dialog" aria-labelledby="Villes" aria-hiddeb="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- entête du la fenêtre modale -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dimiss="modal">
+                        <span aria-hidden="true">
+                            <!-- -->
+                            &times;
+                        </span>
+                    </button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>
