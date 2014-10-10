@@ -7,21 +7,16 @@ body {
 .visible {
   visibility: visible;
 }
-header > div { 
-    height: 10%;
-    background-color: #333;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-        }
-a > span {
+
+.glyphicon {
     padding-right: 10%;
 }
-.nav > li > a {
+.menu li a {
 	text-align: center;
 	color: #EEE;
 	background-color: #333;
 }
-.nav > li > a:hover {
+.menu li a:hover {
 	color: #333;
 	background-color: #428BCA;
 }
